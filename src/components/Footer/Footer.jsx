@@ -79,7 +79,6 @@ const FooterContainer = styled.div`
 const FooterMe = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
   padding: 20px 0px;
 `;
 const Info = styled.div`
@@ -89,12 +88,15 @@ const Info = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-right: 15px;
 `;
 const Social = styled.div`
   margin-top: 15px;
   margin-bottom: 15px;
   display: flex;
-  gap: 15px;
+  a {
+    margin-right: 15px;
+  }
 `;
 const BuildWith = styled.div`
   h3 {
@@ -104,9 +106,9 @@ const BuildWith = styled.div`
     margin-bottom: 15px;
     display: flex;
     amign-itmes: center;
-    gap: 15px;
     span {
       font-size: 1.2rem;
+      margin-left: 15px;
     }
     p {
       font-size: 0.7rem;
