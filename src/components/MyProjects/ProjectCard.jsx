@@ -172,7 +172,6 @@ const ProjectCardContainer = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 20px;
   padding: 20px;
   box-shadow: 0px 10px 10px 0px #141313e0;
   margin-bottom: 30px;
@@ -180,6 +179,8 @@ const ProjectCardContainer = styled.div`
 const ImageLink = styled.div`
   width: 45%;
   min-width: 300px;
+  margin-bottom: 20px;
+  margin-right: 20px;
   img {
     width: 100%;
     border-radius: 20px;
@@ -191,7 +192,6 @@ const Description = styled.div`
   min-width: 280px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
 `;
 const TextDescription = styled.div`
   h4 {
@@ -211,10 +211,12 @@ const TextDescription = styled.div`
     display: flex;
     align-items: center;
     font-size: 1.3rem;
-    gap: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
     svg {
       height: 30px;
       width: 30px;
+      margin-right: 10px;
     }
   }
 `;
@@ -222,7 +224,6 @@ const Links = styled.div`
   display: flex;
   width: 100%;
   justify-content: flex-end;
-  gap: 10px;
   button {
     color: #800080;
     display: block;
@@ -231,6 +232,8 @@ const Links = styled.div`
     border-radius: 5px;
     cursor: pointer;
     background-color: black;
+    margin-top: 10px;
+    margin-right: 10px;
     :hover {
       background-color: #14131394;
       a {
@@ -240,16 +243,15 @@ const Links = styled.div`
     a {
       display: flex;
       align-items: center;
-      gap: 5px;
     }
     svg {
       width: 20px;
       height: 20px;
+      margin-left: 5px;
     }
   }
 `;
 const Span = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
 `;

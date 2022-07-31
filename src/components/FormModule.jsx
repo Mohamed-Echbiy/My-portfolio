@@ -114,7 +114,6 @@ const Module = styled.div`
   }
   button {
     display: block;
-    margin: auto;
     width: 100px;
     padding: 10px;
     border-radius: 5px;
@@ -135,11 +134,11 @@ const Message = styled.div`
     border-radius: 10px;
     display: flex;
     align-items: center;
-    gap: 10px;
     margin-bottom: 10px;
     span {
       color: black;
       font-weight: 700;
+      margin-left: 10px;
     }
   }
 `;
