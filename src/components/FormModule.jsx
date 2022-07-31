@@ -93,8 +93,8 @@ const Module = styled.div`
     display: block;
     margin-bottom: 5px;
     padding: 10px;
-    width: 100%;
     max-width: 450px;
+    min-width: 300px;
     border-radius: 10px;
     color: black;
     box-shadow: 0px 0px 10px 0px #000000bd;
