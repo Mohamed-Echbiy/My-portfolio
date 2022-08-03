@@ -115,7 +115,7 @@ export default function ProjectCard() {
       {/* third project */}
       <ProjectCardContainer>
         <ImageLink>
-          <a href="https://hostter.vercel.app/" target="_blank">
+          <a href="https://country-info-pi.vercel.app/" target="_blank">
             {" "}
             <img
               src={screenShooot}
