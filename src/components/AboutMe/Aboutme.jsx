@@ -8,10 +8,9 @@ export default function Aboutme() {
 
       <AboutMe className="container">
         <p>
-          I am Mohamed a <span>FrontEnd Developer</span> I can creat responsive
-          and dynamic Website and I love learning new things every day and I
-          enjoy the process of solving problems, I am also ambitious to get my
-          skill to the top level.
+          A <span>FrontEnd Developer</span> can create responsive and dynamic
+          Websites and also love learning new things every day and enjoying the
+          process of solving problems.
         </p>
       </AboutMe>
     </AboutmeContainer>

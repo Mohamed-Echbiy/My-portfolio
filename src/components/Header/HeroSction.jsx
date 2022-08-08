@@ -8,10 +8,18 @@ export default function HeroSction() {
     <HeroSection_Container>
       <Content>
         <h1 className="focus-in-expand-fwd ">
-          <span>Hello,</span> <p>I am Mohamed</p>{" "}
+          <span>Hello,</span>{" "}
+          <p>
+            <p>I am</p>{" "}
+            {["M", "O", "H", "A", "M", "E", "D"].map((letter) => (
+              <span>{letter}</span>
+            ))}
+          </p>{" "}
           {` a Front End Web  Developer.`}
         </h1>
-        <Button className="pulsate-bck">Contact Me 🤗 </Button>
+        <Button className="pulsate-bck">
+          <a href="#ContactMe">Contact Me 😄</a>
+        </Button>
         <Icon>
           <a
             href="https://www.linkedin.com/in/mohamed-echbiy-442aa9244/"
@@ -61,13 +69,27 @@ const Content = styled.div`
   h1 {
     font-size: 2rem;
     letter-spacing: 2px;
-    span {
+    > span {
       color: #800080;
       text-shadow: 1px 8px 5px black;
       display: block;
     }
     p {
       color: crimson;
+      display: flex;
+      & + span {
+        margin-left: 10px;
+      }
+      span {
+        margin-right: 2px;
+        color: crimson;
+        transition: ease 0.3s;
+        cursor: pointer;
+        :hover {
+          transform: translateY(-10px);
+          text-shadow: 1px 8px 5px black;
+        }
+      }
     }
   }
 `;

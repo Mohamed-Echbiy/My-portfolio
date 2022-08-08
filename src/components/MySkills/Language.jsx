@@ -46,7 +46,7 @@ const Card = styled.div`
   background-color: #ffffff5;
   box-shadow: 0px 10px 10px 0px #141313e0;
   transition: ease 0.5s;
-  margin-right: 20px;
+  margin-right: 10px;
   :hover {
     box-shadow: 0px 14px 16px 2px #000000e8;
   }

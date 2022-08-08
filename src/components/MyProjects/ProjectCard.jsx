@@ -19,7 +19,6 @@ export default function ProjectCard() {
       <ProjectCardContainer>
         <ImageLink>
           <a href="https://anime-time.vercel.app/" target="_blank">
-            {" "}
             <img
               src={screenShot}
               alt="Site Image"
@@ -32,8 +31,8 @@ export default function ProjectCard() {
             <h4>Description :</h4>
             <p>
               The site showcase recent animes and episodes and much more its
-              build using jikan api that being used by MyAnimeList. It doesn't
-              support watching episodes due to Property rights.
+              build using jikan api. It doesn't support watching episodes due to
+              Property rights.
             </p>
             <h4>What I used to build this site :</h4>
             <Span>
@@ -61,7 +60,7 @@ export default function ProjectCard() {
               {" "}
               <a href="https://anime-time.vercel.app/" target="_blank">
                 Website
-              </a>{" "}
+              </a>
             </button>
           </Links>
         </Description>
@@ -70,7 +69,6 @@ export default function ProjectCard() {
       <ProjectCardContainer>
         <ImageLink>
           <a href="https://hostter.vercel.app/" target="_blank">
-            {" "}
             <img
               src={screenShoot}
               alt="Site Image"
@@ -116,7 +114,6 @@ export default function ProjectCard() {
       <ProjectCardContainer>
         <ImageLink>
           <a href="https://country-info-pi.vercel.app/" target="_blank">
-            {" "}
             <img
               src={screenShooot}
               alt="Site Image"
@@ -127,10 +124,7 @@ export default function ProjectCard() {
         <Description>
           <TextDescription>
             <h4>Description :</h4>
-            <p>
-              Country info is a site get the user information about a sepecfied
-              country
-            </p>
+            <p>An app that return country information</p>
             <h4>What I used to build this site :</h4>
             <Span>
               <span>
