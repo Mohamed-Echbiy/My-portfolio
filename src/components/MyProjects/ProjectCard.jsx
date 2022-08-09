@@ -18,7 +18,7 @@ export default function ProjectCard() {
       {/* first project */}
       <ProjectCardContainer>
         <ImageLink>
-          <a href="https://anime-time.vercel.app/" target="_blank">
+          <a href="https://animo-time.vercel.app/" target="_blank">
             <img
               src={screenShot}
               alt="Site Image"
@@ -58,7 +58,7 @@ export default function ProjectCard() {
             </button>
             <button>
               {" "}
-              <a href="https://anime-time.vercel.app/" target="_blank">
+              <a href="https://animo-time.vercel.app/" target="_blank">
                 Website
               </a>
             </button>
