@@ -1,160 +1,291 @@
 import React from "react";
 import styled from "styled-components";
-import { TbBrandReactNative, TbCode } from "react-icons/tb";
-import screenShot from "../../assets/imageme.png";
-import screenShoot from "../../assets/Hostter.png";
+import { TbCode } from "react-icons/tb";
 import screenShooot from "../../assets/CountryInfo.png";
+import { AnimationOnScroll } from "react-animation-on-scroll";
+import { TbBrandCss3, TbBrandHtml5, TbBrandJavascript } from "react-icons/tb";
 import {
-  TbBrandCss3,
-  TbBrandHtml5,
-  TbBrandBootstrap,
-  TbBrandJavascript,
-} from "react-icons/tb";
-import { SiStyledcomponents } from "react-icons/si";
-import { IoLogoNpm } from "react-icons/io";
+  SiStyledcomponents,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiTypescript,
+  SiInternetexplorer,
+  SiReact,
+} from "react-icons/si";
+
+import "animate.css";
 export default function ProjectCard() {
   return (
     <>
+      {/* zero project */}
+      <AnimationOnScroll
+        animateIn="animate__fadeInRight"
+        animateOnce={true}
+        offset={100}
+      >
+        <ProjectCardContainer>
+          <ImageLink>
+            <a href="https://animo-time-v2.vercel.app/" target="_blank">
+              <img
+                src="/screenShot_animeTime.png"
+                alt="Site Image"
+                title="screenshot from the site"
+              />
+            </a>
+          </ImageLink>
+          <Description>
+            <TextDescription>
+              <h4>Description :</h4>
+              <p>
+                Anime streaming site built using Typescript, Nextjs, TailwindCss
+                and styled Components. the site not only offers episodes for
+                animes but also display various information about them and make
+                it a great place for anime lovers.
+              </p>
+              <h4>Tools :</h4>
+              <Span>
+                <span>
+                  <SiNextdotjs /> NextJs
+                </span>
+                <span>
+                  <SiReact /> ReactJs
+                </span>
+                <span>
+                  <SiStyledcomponents /> Styled Components
+                </span>
+                <span>
+                  <SiTailwindcss /> Tailwindcss
+                </span>
+                <span>
+                  <SiTypescript /> Typescripts
+                </span>
+              </Span>
+            </TextDescription>
+            <Links>
+              <button>
+                <a
+                  href="https://github.com/Mohamed-Echbiy/animo-tima-v2"
+                  target="_blank"
+                >
+                  Source Code <TbCode />
+                </a>
+              </button>
+              <button>
+                <a href="https://animo-time-v2.vercel.app/" target="_blank">
+                  Website <SiInternetexplorer />
+                </a>
+              </button>
+            </Links>
+          </Description>
+        </ProjectCardContainer>
+      </AnimationOnScroll>
       {/* first project */}
-      <ProjectCardContainer>
-        <ImageLink>
-          <a href="https://animo-time.vercel.app/" target="_blank">
-            <img
-              src={screenShot}
-              alt="Site Image"
-              title="screenshot from the site"
-            />
-          </a>
-        </ImageLink>
-        <Description>
-          <TextDescription>
-            <h4>Description :</h4>
-            <p>
-              The site showcase recent animes and episodes and much more its
-              build using jikan api. It doesn't support watching episodes due to
-              Property rights.
-            </p>
-            <h4>What I used to build this site :</h4>
-            <Span>
-              <span>
-                <TbBrandReactNative /> React Js
-              </span>
-              <span>
-                <SiStyledcomponents /> Styled Components
-              </span>
-              <span>
-                <IoLogoNpm /> Npm
-              </span>
-            </Span>
-          </TextDescription>
-          <Links>
-            <button>
-              <a
-                href="https://github.com/Mohamed-Echbiy/AnimoTime"
-                target="_blank"
-              >
-                Source Code <TbCode />
-              </a>
-            </button>
-            <button>
-              {" "}
-              <a href="https://animo-time.vercel.app/" target="_blank">
-                Website
-              </a>
-            </button>
-          </Links>
-        </Description>
-      </ProjectCardContainer>
+      <AnimationOnScroll
+        animateIn="animate__fadeInLeft"
+        animateOnce={true}
+        offset={100}
+      >
+        <ProjectCardContainer>
+          <ImageLink>
+            <a href="https://minify-nasa.vercel.app/" target="_blank">
+              <img
+                src="/MinifyNasa.png"
+                alt="Site Image"
+                title="screenshot from the site"
+              />
+            </a>
+          </ImageLink>
+          <Description>
+            <TextDescription>
+              <h4>Description :</h4>
+              <p>
+                a Web application with beautiful animation that gives some basic
+                info about planets and in the end provides a quick quiz for each
+                planet.
+              </p>
+              <h4>Tools :</h4>
+              <Span>
+                <span>
+                  <SiReact /> ReactJs
+                </span>
+                <span>
+                  <SiStyledcomponents /> Styled Components
+                </span>
+                <span>
+                  <SiTypescript /> Typescripts
+                </span>
+              </Span>
+            </TextDescription>
+            <Links>
+              <button>
+                <a
+                  href="https://github.com/Mohamed-Echbiy/Minify-Nasa"
+                  target="_blank"
+                >
+                  Source Code <TbCode />
+                </a>
+              </button>
+              <button>
+                <a href="https://minify-nasa.vercel.app/" target="_blank">
+                  Website <SiInternetexplorer />
+                </a>
+              </button>
+            </Links>
+          </Description>
+        </ProjectCardContainer>
+      </AnimationOnScroll>
       {/* second project */}
-      <ProjectCardContainer>
-        <ImageLink>
-          <a href="https://hostter.vercel.app/" target="_blank">
-            <img
-              src={screenShoot}
-              alt="Site Image"
-              title="screenshot from the site"
-            />
-          </a>
-        </ImageLink>
-        <Description>
-          <TextDescription>
-            <h4>Description :</h4>
-            <p>A mobile responsive landing page</p>
-            <h4>What I used to build this site :</h4>
-            <Span>
-              <span>
-                <TbBrandHtml5 /> HTML5
-              </span>
-              <span>
-                <TbBrandCss3 /> CSS3
-              </span>
-              <span>
-                <TbBrandBootstrap /> Bootstrap
-              </span>
-            </Span>
-          </TextDescription>
-          <Links>
-            <button>
-              <a
-                href="https://github.com/Mohamed-Echbiy/Hostter"
-                target="_blank"
-              >
-                Source Code <TbCode />
-              </a>
-            </button>
-            <button>
-              <a href="https://hostter.vercel.app/" target="_blank">
-                Website
-              </a>
-            </button>
-          </Links>
-        </Description>
-      </ProjectCardContainer>
+      <AnimationOnScroll
+        animateIn="animate__fadeInRight"
+        animateOnce={true}
+        offset={100}
+      >
+        <ProjectCardContainer>
+          <ImageLink>
+            <a href="https://tesla-clone-kappa-two.vercel.app/" target="_blank">
+              <img
+                src="https://raw.githubusercontent.com/Mohamed-Echbiy/Tesla_Clone/main/ReadmeAssets/Screenshot%20Capture%20-%202022-07-26%20-%2015-05-59.png"
+                alt="Site Image"
+                title="screenshot from the site"
+              />
+            </a>
+          </ImageLink>
+          <Description>
+            <TextDescription>
+              <h4>Description :</h4>
+              <p> a tesla homepage with some fancy animation</p>
+              <h4>Tools :</h4>
+              <Span>
+                <span>
+                  <SiReact /> ReactJs
+                </span>
+                <span>
+                  <SiStyledcomponents /> Styled Components
+                </span>
+              </Span>
+            </TextDescription>
+            <Links>
+              <button>
+                <a
+                  href="https://github.com/Mohamed-Echbiy/Tesla_Clone"
+                  target="_blank"
+                >
+                  Source Code <TbCode />
+                </a>
+              </button>
+              <button>
+                <a
+                  href="https://tesla-clone-kappa-two.vercel.app/"
+                  target="_blank"
+                >
+                  Website <SiInternetexplorer />
+                </a>
+              </button>
+            </Links>
+          </Description>
+        </ProjectCardContainer>
+      </AnimationOnScroll>
       {/* third project */}
-      <ProjectCardContainer>
-        <ImageLink>
-          <a href="https://country-info-pi.vercel.app/" target="_blank">
-            <img
-              src={screenShooot}
-              alt="Site Image"
-              title="screenshot from the site"
-            />
-          </a>
-        </ImageLink>
-        <Description>
-          <TextDescription>
-            <h4>Description :</h4>
-            <p>An app that return country information</p>
-            <h4>What I used to build this site :</h4>
-            <Span>
-              <span>
-                <TbBrandHtml5 /> Html5
-              </span>
-              <span>
-                <TbBrandCss3 /> Css3
-              </span>
-              <span>
-                <TbBrandJavascript /> Java script
-              </span>
-            </Span>
-          </TextDescription>
-          <Links>
-            <button>
-              <a
-                href="https://github.com/Mohamed-Echbiy/Country-Info"
-                target="_blank"
-              >
-                Source Code <TbCode />
-              </a>
-            </button>
-            <button>
-              <a href="https://country-info-pi.vercel.app/" target="_blank">
-                Website
-              </a>
-            </button>
-          </Links>
-        </Description>
-      </ProjectCardContainer>
+      <AnimationOnScroll
+        animateIn="animate__fadeInLeft"
+        offset={100}
+        animateOnce={true}
+      >
+        <ProjectCardContainer>
+          <ImageLink>
+            <a href="https://one-piece-eta.vercel.app/" target="_blank">
+              <img
+                src={"/onePiece.png"}
+                alt="Site Image"
+                title="screenshot from the site"
+              />
+            </a>
+          </ImageLink>
+          <Description>
+            <TextDescription>
+              <h4>Description :</h4>
+              <p>
+                a website for popular anime one piece with beautiful UI and a
+                great performance and SEO and overall great score at lighthouse
+              </p>
+              <h4>Tools :</h4>
+              <Span>
+                <span>
+                  <SiReact /> Reactjs
+                </span>
+                <span>
+                  <SiStyledcomponents /> Styled components
+                </span>
+              </Span>
+            </TextDescription>
+            <Links>
+              <button>
+                <a
+                  href="https://github.com/Mohamed-Echbiy/One_piece_minWiki"
+                  target="_blank"
+                >
+                  Source Code <TbCode />
+                </a>
+              </button>
+              <button>
+                <a href="https://one-piece-eta.vercel.app/" target="_blank">
+                  Website <SiInternetexplorer />
+                </a>
+              </button>
+            </Links>
+          </Description>
+        </ProjectCardContainer>
+      </AnimationOnScroll>
+      <AnimationOnScroll
+        animateIn="animate__fadeInRight"
+        offset={100}
+        animateOnce={true}
+      >
+        <ProjectCardContainer>
+          <ImageLink>
+            <a href="https://country-info-pi.vercel.app/" target="_blank">
+              <img
+                src={screenShooot}
+                alt="Site Image"
+                title="screenshot from the site"
+              />
+            </a>
+          </ImageLink>
+          <Description>
+            <TextDescription>
+              <h4>Description :</h4>
+              <p>An app that return country information</p>
+              <h4>Tools :</h4>
+              <Span>
+                <span>
+                  <TbBrandHtml5 /> Html5
+                </span>
+                <span>
+                  <TbBrandCss3 /> Css3
+                </span>
+                <span>
+                  <TbBrandJavascript /> Java script
+                </span>
+              </Span>
+            </TextDescription>
+            <Links>
+              <button>
+                <a
+                  href="https://github.com/Mohamed-Echbiy/Country-Info"
+                  target="_blank"
+                >
+                  Source Code <TbCode />
+                </a>
+              </button>
+              <button>
+                <a href="https://country-info-pi.vercel.app/" target="_blank">
+                  Website <SiInternetexplorer />
+                </a>
+              </button>
+            </Links>
+          </Description>
+        </ProjectCardContainer>
+      </AnimationOnScroll>
     </>
   );
 }
@@ -175,10 +306,13 @@ const ImageLink = styled.div`
   min-width: 300px;
   margin-bottom: 20px;
   margin-right: 20px;
-  img {
-    width: 100%;
-    border-radius: 20px;
-    opacity: 0.7;
+  position: relative;
+  a {
+    img {
+      width: 100%;
+      height: 100%;
+      opacity: 0.8;
+    }
   }
 `;
 const Description = styled.div`
@@ -204,9 +338,9 @@ const TextDescription = styled.div`
     min-width: fit-content;
     display: flex;
     align-items: center;
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin-bottom: 10px;
-    margin-right: 10px;
+    margin-right: 15px;
     svg {
       height: 30px;
       width: 30px;

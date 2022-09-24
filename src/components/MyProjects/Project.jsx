@@ -10,7 +10,9 @@ export default function Project() {
   );
 }
 // styling
-const ProjectContainer = styled.div``;
+const ProjectContainer = styled.div`
+  overflow-x: hidden;
+`;
 const H2 = styled.h2`
   margin-top: 80px;
   margin-bottom: 40px;

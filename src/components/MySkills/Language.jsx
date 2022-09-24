@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { TbBrandCss3, TbBrandHtml5, TbBrandJavascript } from "react-icons/tb";
+import { SiTypescript } from "react-icons/si";
 export default function Language() {
   return (
     <CardContainer>
@@ -28,6 +29,14 @@ export default function Language() {
           <h3>JS</h3>
         </Name>
       </Card>
+      <Card>
+        <Image>
+          <SiTypescript />
+        </Image>
+        <Name>
+          <h3>TYPESCRIPTS</h3>
+        </Name>
+      </Card>
     </CardContainer>
   );
 }
@@ -43,7 +52,6 @@ const Card = styled.div`
   max-width: 300px;
   border-radius: 25px 0px 15px 5px;
   padding: 20px 10px;
-  background-color: #ffffff5;
   box-shadow: 0px 10px 10px 0px #141313e0;
   transition: ease 0.5s;
   margin-right: 10px;

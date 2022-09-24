@@ -4,15 +4,15 @@ export default function NavBar() {
   return (
     <Navbar className="container">
       <Links>
-        <li>
+        {/* <li>
           <a href="#MySkills">My Skills</a>
-        </li>
+        </li> */}
         <li>
           <a href="#MyWork">My Work</a>
-        </li>{" "}
-        <li>
+        </li>
+        {/* <li>
           <a href="#AboutMe">About Me</a>
-        </li>{" "}
+        </li> */}
         <li>
           <a href="#ContactMe">Contact Me</a>
         </li>
@@ -25,7 +25,7 @@ export default function NavBar() {
 
 const Navbar = styled.div`
   height: 8vh;
-  background-color: #fffff;
+  background-color: #ffff;
   display: flex;
   align-items: center;
   justify-content: center;

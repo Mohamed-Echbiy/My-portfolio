@@ -8,13 +8,13 @@ export default function HeroSction() {
     <HeroSection_Container>
       <Content>
         <h1 className="focus-in-expand-fwd ">
-          <span>Hello,</span>{" "}
+          <span>Hello,</span>
           <p>
-            <p>I am</p>{" "}
+            <p>I am</p>
             {["M", "O", "H", "A", "M", "E", "D"].map((letter) => (
               <span>{letter}</span>
             ))}
-          </p>{" "}
+          </p>
           {` a Front End Web  Developer.`}
         </h1>
         <Button className="pulsate-bck">
@@ -32,8 +32,7 @@ export default function HeroSction() {
           </a>
         </Icon>
       </Content>
-      <a href="#MySkills">
-        {" "}
+      <a href="#MyWork">
         <BsArrowDownShort className="Icon shake-vertical" />
       </a>
       <Image>
