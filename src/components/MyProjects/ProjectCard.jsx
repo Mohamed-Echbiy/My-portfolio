@@ -17,6 +17,56 @@ import "animate.css";
 export default function ProjectCard() {
   return (
     <>
+      <AnimationOnScroll
+        animateIn="animate__fadeInLeft"
+        animateOnce={true}
+        offset={100}
+      >
+        <ProjectCardContainer>
+          <ImageLink>
+            <a href="https://zorinos-clone.vercel.app/" target="_blank">
+              <img
+                src="/zorinos.png"
+                alt="Site Image"
+                title="screenshot from the site"
+              />
+            </a>
+          </ImageLink>
+          <Description>
+            <TextDescription>
+              <h4>Description :</h4>
+              <p>A clean clone of ZorinOs website</p>
+              <h4>Tools :</h4>
+              <Span>
+                <span>
+                  <SiNextdotjs /> NextJs
+                </span>
+                <span>
+                  <SiReact /> ReactJs
+                </span>
+                <span>
+                  <SiTailwindcss /> Tailwindcss
+                </span>
+              </Span>
+            </TextDescription>
+            <Links>
+              <button>
+                <a
+                  href="https://github.com/Mohamed-Echbiy/ZorinOs_Website_Clone"
+                  target="_blank"
+                >
+                  Source Code <TbCode />
+                </a>
+              </button>
+              <button>
+                <a href="https://zorinos-clone.vercel.app/" target="_blank">
+                  Website <SiInternetexplorer />
+                </a>
+              </button>
+            </Links>
+          </Description>
+        </ProjectCardContainer>
+      </AnimationOnScroll>
       {/* zero project */}
       <AnimationOnScroll
         animateIn="animate__fadeInRight"

@@ -17,7 +17,6 @@ export default function NavBar() {
           <a href="#ContactMe">Contact Me</a>
         </li>
       </Links>
-      <Burgger></Burgger>
     </Navbar>
   );
 }

@@ -10,9 +10,9 @@ export default function HeroSction() {
         <h1 className="focus-in-expand-fwd ">
           <span>Hello,</span>
           <p>
-            <p>I am</p>
-            {["M", "O", "H", "A", "M", "E", "D"].map((letter) => (
-              <span>{letter}</span>
+            <span>I am</span>
+            {["M", "O", "H", "A", "M", "E", "D"].map((letter, index) => (
+              <span key={index + 1233}>{letter}</span>
             ))}
           </p>
           {` a Front End Web  Developer.`}
@@ -20,15 +20,18 @@ export default function HeroSction() {
         <Button className="pulsate-bck">
           <a href="#ContactMe">Contact Me 😄</a>
         </Button>
+        <Button>
+          <a href="/resume.pdf">Download 👇</a>
+        </Button>
         <Icon>
           <a
             href="https://www.linkedin.com/in/mohamed-echbiy-442aa9244/"
             target="_blank"
           >
-            <BsLinkedin className="contactme" />
+            <BsLinkedin className="contact me" />
           </a>
           <a href="https://github.com/Mohamed-Echbiy" target="_blank">
-            <BsGithub className="contactme" />
+            <BsGithub className="contact me" />
           </a>
         </Icon>
       </Content>
