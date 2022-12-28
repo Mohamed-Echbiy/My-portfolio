@@ -4,6 +4,7 @@ import { TbCode } from "react-icons/tb";
 import screenShooot from "../../assets/CountryInfo.png";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import { TbBrandCss3, TbBrandHtml5, TbBrandJavascript } from "react-icons/tb";
+import { FaNodeJs } from "react-icons/fa";
 import {
   SiStyledcomponents,
   SiNextdotjs,
@@ -11,12 +12,72 @@ import {
   SiTypescript,
   SiInternetexplorer,
   SiReact,
+  SiMongodb,
+  SiExpress,
 } from "react-icons/si";
 
 import "animate.css";
 export default function ProjectCard() {
   return (
     <>
+      <AnimationOnScroll
+        animateIn="animate__fadeInRight"
+        animateOnce={true}
+        offset={100}
+      >
+        <ProjectCardContainer>
+          <ImageLink>
+            <a href="https://efficiency-x6l7.onrender.com" target="_blank">
+              <img
+                src="/efficiency.png"
+                alt="Site Image"
+                title="screenshot from the site"
+              />
+            </a>
+          </ImageLink>
+          <Description>
+            <TextDescription>
+              <h4>Description :</h4>
+              <p>A full stack Todo App</p>
+              <h4>Tools :</h4>
+              <Span>
+                <span>
+                  <FaNodeJs /> NodeJs
+                </span>
+                <span>
+                  <SiReact /> ReactJs
+                </span>
+                <span>
+                  <SiTailwindcss /> Tailwindcss
+                </span>
+                <span>
+                  <SiMongodb /> MongoDb
+                </span>
+                <span>
+                  <SiExpress />
+                  ExpressJs
+                </span>
+              </Span>
+            </TextDescription>
+            <Links>
+              <button>
+                <a
+                  href="https://github.com/Mohamed-Echbiy/productive"
+                  target="_blank"
+                >
+                  Source Code <TbCode />
+                </a>
+              </button>
+              <button>
+                <a href="https://efficiency-x6l7.onrender.com/" target="_blank">
+                  Website <SiInternetexplorer />
+                </a>
+              </button>
+            </Links>
+          </Description>
+        </ProjectCardContainer>
+      </AnimationOnScroll>
+      {/* */}
       <AnimationOnScroll
         animateIn="animate__fadeInLeft"
         animateOnce={true}
